@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<div id="managerPanel" class="manager-panel">
+  <h2>Manager Panel</h2>
+  <label>Wine Name: <input type="text" id="wineName" /></label><br>
+  <label>Description: <input type="text" id="wineDesc" /></label><br>
+  <label>Price: <input type="number" id="winePrice" /></label><br>
+  <label>Image URL: <input type="text" id="wineImage" /></label><br>
+  <button id="addWineBtn">Add Wine</button>
+  <button id="closeManager">Close</button>
+</div>
+<div id="managerPanel" class="manager-panel">
+  <h2>Manager Panel</h2>
+  <label>Wine Name: <input type="text" id="wineName" /></label><br>
+  <label>Description: <input type="text" id="wineDesc" /></label><br>
+  <label>Price: <input type="number" id="winePrice" /></label><br>
+  <label>Image URL: <input type="text" id="wineImage" /></label><br>
+  <button id="addWineBtn">Add Wine</button>
+  <button id="closeManager">Close</button>
+</div>
+
+<body>
+
+  <header>
+    <div class="title">PRODUCT LIST</div>
+  <button id="managerBtn">Manager</button>
+
+    <div class="icon-cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+        viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+      </svg>
+      <span>0</span>
+    </div>
+  </header>
+
+  <div class="listProduct">
+    <div class="item">
+      <img src="/image/white horse.png" alt="White Horse Winery" />
+      <h2>White Horse Winery</h2>
+      <p>White Horse Winery,white wines, from new jerseys </p>
+      <div class="price">$2000</div>
+      <button class="addcart">Add to Cart</button>
+     </div>
+
+    <div class="item">
+      <img src="/image/shiraz.jpg" alt="Shiraz" />
+      <h2>Shiraz</h2>
+      <p>Tabor red wine Winery's from israel<p>
+      <div class="price">$50</div>
+        <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/Château Belgrave.png" alt="Château Belgrave" />
+      <h2>Château Belgrave</h2>
+      <p>Château Belgrave is red wine from france</p>
+      <div class="price">$220</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/Crossings Sauvignon Blanc.png" alt="Crossings Sauvignon Blanc" />
+      <h2>Crossings Sauvignon Blanc</h2>
+      <p>Crossings Sauvignon Blanc is a white wine from the Marlborough region of New Zealand</p>
+      <div class="price">$190</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/Essenze Barolo de.png" alt="Essenze Barolo de" />
+      <h2>Essenze Barolo de</h2>
+      <p>Essenze Barolo is a red wine from the Piedmont region of Italy</p>
+      <div class="price">$210</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/terrazas.png" alt="terrazas" />
+      <h2>terrazas</h2>
+      <p>red wines,  and is from the Mendoza region of Argentina</p>
+      <div class="price">$230</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/Paradou-Provence-NM_HD.png" alt="pardou" />
+      <h2>pardou</h2>
+      <p>rosé wine from the Provence region of France</p>
+      <div class="price">$100</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="/image/Rioja Crianza.png" alt="Rioja Crianza" />
+      <h2>Rioja Crianza</h2>
+      <p>Rioja Crianza is a red wine from the Rioja region of Spain</p>
+      <div class="price">$140</div>
+      <button class="addcart">Add to Cart</button>
+    </div>
+  </div> <div class="CartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listcart">
+      <div class="cart-item">
+        <div class="image">
+          <img src="/image/white horse.png" alt="White Horse" />
+        </div>
+        <div class="details">
+          <div class="name">White Horse Winery</div>
+          <div class="quantity">
+            <span class="minus">-</span>
+            <span>1</span>
+            <span class="plus">+</span>
+          </div>
+          <div class="totalprice">$200</div>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="close">CLOSE</button>
+      <button class="Checkout">Checkout</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
